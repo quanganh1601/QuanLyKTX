@@ -1,0 +1,31 @@
+.menu {
+    height: 100%;
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #262626;
+}
+
+.side-bar {
+    height: calc(100vh - 110px);
+}
+
+.ant-menu-dark {
+    background-color: #262626;
+}
+
+.avatar {
+    background-color: #f56a00
+}
+
+.text {
+    color: white;
+}
+
+.ant-menu-inline-collapsed {
+    width: 64px;
+}
+
+.ant-menu-title-content {
+    display: flex;
+}
