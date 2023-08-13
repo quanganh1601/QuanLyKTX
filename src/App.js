@@ -6,7 +6,26 @@ import DefaultLayout from './layout/defaultLayout';
 import Login from './pages/Login';
 import Home from './pages/Home/Home';
 function App() {
-  const ischeck = true;
+
+  function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(";");
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) === " ") {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) === 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
+  const accessToken = getCookie("token_3");
+  const isLogin = accessToken;
+  const props = { accessToken };
+  
   return (
     <div className="App">
       <Router>
@@ -24,11 +43,11 @@ function App() {
                   key={index}
                   path={router.path}
                   element={
-                      ischeck ? 
-                      <Layout>
-                        <Page/>
-                      </Layout> :
-                      <Navigate to={"/login"} />
+                    isLogin
+                      ? <Layout>
+                          <Page {...props}/>
+                        </Layout>
+                      : <Navigate to={"/login"} />
                   }
                 />
               )

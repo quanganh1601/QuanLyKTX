@@ -1,3 +1,70 @@
 .home {
-    height: 2000px;
+  height: auto;
+  padding: 15px
+}
+
+.body-home {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.calendar {
+  width: 65%;
+}
+
+.statistical {
+  width: 35%;
+  padding: 0px 0px 0px 30px
+}
+
+.box-statistical {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.statistical .count {
+  font-size: 38px;
+  font-weight: bold;
+  color: white;
+}
+
+.statistical h3 {
+  margin-top: 5px;
+  font-size: 18px;
+  color: white;
+}
+
+.statistical span {
+  color: white;
+}
+
+.calendar-home .ant-picker-content {
+  height: 500px !important;
+}
+
+.header-home {
+  float: left;
+  margin-bottom: 15px;
+}
+
+.note {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-top: 8.5px;
+}
+
+.header-note {
+  text-align: left;
+}
+
+.img-tick {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
 }

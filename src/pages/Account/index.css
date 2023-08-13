@@ -1,0 +1,35 @@
+
+.wrapper-account {
+    height: 100%;
+    width: 100%;
+}
+
+.form-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 1000px;
+}
+
+.form-account {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-field {
+    width: 500px;
+}
+
+.right-field {
+    width: 500px
+}
+
+.right-field .ant-picker {
+    width: 100%;
+}
+
+.ant-select-selection-item {
+    position: absolute;
+}

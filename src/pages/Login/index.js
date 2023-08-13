@@ -8,9 +8,13 @@ const Login = () => {
     let token, refresh_token;
     const url = "http://localhost:3000/sig_in";
     await axios.post(url, values)
-      .then((res) => (token = res.data.token, refresh_token = res.data.refreshToken ))
-      setCookie("token_3", token, 365);
-      setCookie("refresh_token", refresh_token, 365)
+      .then((res) => {
+        token = res.data.token;
+        refresh_token = res.data.refreshToken;
+        setCookie("token_3", token, 365);
+        setCookie("refresh_token", refresh_token, 365);
+        window.location.replace("/")
+      });
   }
 
   const setCookie = (cookieName, cookieValue, expirationDays) => {

@@ -1,0 +1,57 @@
+.wrapper-room {
+  padding: 0px 15px;
+}
+
+.tabs-room {
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  width: 14.28%;
+}
+
+.box .header-box {
+  position: absolute;
+  right: -6px;
+  top: -5px;
+  height: 20px;
+  width: 50px;
+  background-color:#37b139;
+  color: white;
+  border-radius: 4px;
+}
+
+.box .box-room {
+  background-color: orange;
+  height: 150px;
+  position: relative;
+  border-radius: 6px;
+}
+
+.box .body-box {
+  padding: 20px 5px 0px 5px;
+  width: 100%;
+  text-align: start;
+}
+
+.body-box .full-name {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: white;
+  font-weight: 400;
+  font-size: 14;
+}
+
+.total-student {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 20px;
+  width: 30px;
+  border-top-left-radius: 10px;
+  background-color: #9bc6ec;
+  border-bottom-right-radius: 6px;
+}

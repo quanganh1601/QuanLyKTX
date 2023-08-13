@@ -6,7 +6,7 @@ import {connect } from "react-redux";
 
 const DefaultLayout = ({ children, collapsed }) => {
   const style = {width: collapsed ? "calc(100% - 64px)" : "calc(100% - 248px)"}
-
+  console.log("header")
   return (
     <div className="layout">
       <Menu/>
